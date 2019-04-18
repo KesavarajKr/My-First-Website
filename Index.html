@@ -1,0 +1,1316 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to organic shopping farm">
+    <meta name="keywords" content="html,organic,template,agri,agriculture,e-commerce,shopping">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="icon" href="images/title-bar-logo.png" type="image/icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+    <title>Welcome To Agriculture Farm</title>
+  </head>
+   
+<body onload="timeSet()">
+    
+     <div id="loader">
+       <img src="images/edited/juzi_loading.gif">
+     </div>
+  
+        <div style="display:none;" id="body" class="animation-content">
+
+        	<!-- Navbar Start Here -->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <img src="images/logo/logo.png" class="navbar-brand">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <!--<li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>-->
+                <li class="nav-item">
+                  <a class="nav-link" title="Goto about"href="about.html">About us</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" title="See products price" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pricing Table
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">                     
+                    <a class="dropdown-item" data-toggle="modal" data-target="#vegetable-price" href="#">Vegetables Price</a>
+                    <a class="dropdown-item" data-toggle="modal" data-target="#fruits-price" href="#">Fruits Price</a>
+                    <a class="dropdown-item" data-toggle="modal" data-target="#Dryfruits-price" href="#">Dryfruits Price</a>
+                  </div>
+
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Goto Shop
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="vegetable.html">Vegetable Shop</a>
+                    <a class="dropdown-item" href="fruits.html">Fruits Shop</a>
+                    <a class="dropdown-item" href="dryfruits.html">Dryfruits Shop</a>
+                  </div>
+                </li>
+
+                <!--<li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>-->
+                <li class="nav-item cart-icon">
+                  <a class="nav-link" href="#" data-toggle="modal" title="Cart"data-target="#cart"><i class="fa fa-shopping-bag" aria-hidden="true"><sup id="cart-count"></sup></i></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <!--   The Vegatable price Start Here-->
+
+<!-- The Modal -->
+<div class="modal fade" id="vegetable-price" tableindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        
+          <h4 class="modal-title">Vegetables Price</h4>
+
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" class="text-center">Vegetables Name</th>
+                <th scope="col" class="text-center">Price</th>
+                <th scope="col" class="text-center">Shop</th>
+              </tr>
+
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="text-center">Onion</td>
+                <td class="text-center">$25</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Carrot</td>
+                <td class="text-center">$25</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Beedroot</td>
+                <td class="text-center">$20</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Tomato</td>
+                <td class="text-center">$21</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Potato</td>
+                <td class="text-center">$15</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Brinjal</td>
+                <td class="text-center">$12</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Capcicum</td>
+                <td class="text-center">$25</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Broccoli</td>
+                <td class="text-center">$25</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Potato</td>
+                <td class="text-center">$25</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Brinjal</td>
+                <td class="text-center">$25</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Broccoli</td>
+                <td class="text-center">$25</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</button></td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+        <!--vegetable price end here-->
+
+
+        <!-- Fruits Price Start Here -->
+
+
+        <div class="modal fade" id="fruits-price" tableindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                
+                  <h4 class="modal-title mx-auto d-block">Fruits Price</h4>
+
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="text-center">Fruits Name</th>
+                        <th scope="col" class="text-center">Price</th>
+                        <th scope="col" class="text-center">Shop</th>
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="text-center">Banana</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Apple</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Orange</td>
+                        <td class="text-center">$20</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Grapes</td>
+                        <td class="text-center">$21</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Strewberry</td>
+                        <td class="text-center">$15</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Cherry</td>
+                        <td class="text-center">$12</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Pappaya</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Jackfruit</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Cherry</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Pappaya</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Cherry</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</button></td>
+                      </tr>
+                    </tbody>
+                </table>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Fruits Price End Here -->
+
+        <!-- DryFruits Price Start Here -->
+
+
+        <div class="modal fade" id="Dryfruits-price" tableindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                
+                  <h4 class="modal-title mx-auto d-block">Dryfruits Price</h4>
+
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="text-center">Dryfruits Name</th>
+                        <th scope="col" class="text-center">Price</th>
+                        <th scope="col" class="text-center">Shop</th>
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="text-center">Cashew</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Chesnut</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Fennel</td>
+                        <td class="text-center">$20</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Kismiss</td>
+                        <td class="text-center">$21</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Peanut</td>
+                        <td class="text-center">$15</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Pista</td>
+                        <td class="text-center">$12</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Almond</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Anise</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Kismiss</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Pista</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</button></td>
+                      </tr>
+
+                      <tr>
+                        <a href="#"><td class="text-center">Almond</td></a>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</button></td>
+                      </tr>
+                    </tbody>
+                </table>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--video container -->
+        <div class="video-header">
+          <div class="video-container">
+                <!--<video src="images/video/background.mp4" poster="poster.gif" type="video/mp4" autoplay="true" loop="true"></video>-->
+                <img src="images/video/poster.png" class="img-fluid">
+            </div>
+
+            <div class="video-content">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-7 welcome-content">
+                      <h1><strong>Welcome to organic farm</strong></h1>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    </div>
+                    <div class="col-lg-5">
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!--video container end here -->
+
+
+        <!-- DryFruits Price End Here -->
+
+
+        <!-- Carousel Start Here -->
+
+       <!--<div class="container-fluid slider">
+            <div class="row">
+              <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner top-carousel">
+                  <div class="carousel-item active">
+                    
+                        <div class="row carousel-content">
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xl-7">
+                              <div class="content animated fadeIn" style="animation-duration:5s;">
+                                  <h1 class="text-left"><strong>Welcome to Shop</strong></h1>
+                                  <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                  <button class="btn btn-default btn-small">Go to Shop</button>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-xl-5 animated zoomIn" style="animation-duration:4s;">
+                              <img src="images/edited/farmer.png" class="img-fluid d-block mx-auto">
+                            </div>-->
+                       <!-- </div>
+                    
+                  </div>
+                  <div class="carousel-item top-carousel">
+
+                    <div class="row carousel-content">
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xl-7">
+                              <div class="content animated fadeIn" style="animation-duration:5s;">
+                                  <h1 class="text-left"><strong>Fruits</strong></h1>
+                                  <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                  <button class="btn btn-default btn-small">Go to Shop</button>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-xl-5 animated zoomIn" style="animation-duration:4s;">
+                              <img src="images/edited/welcome.png" class="img-fluid">
+                            </div>-->
+                     <!--   </div>
+                    
+                  </div>
+                  <div class="carousel-item top-carousel">
+
+                      <div class="row carousel-content">
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xl-7">
+                              <div class="content animated fadeIn" style="animation-duration:5s;">
+                                  <h1 class="text-left"><strong>Vegetables</strong></h1>
+                                  <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                  <button class="btn btn-default btn-small">Go to Shop</button>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-xl-5 animated zoomIn" style="animation-duration:4s;">
+                              <img src="images/vegetable.png" class="img-fluid">
+                            </div>-->
+                      <!--  </div>
+                    
+                  </div>
+
+                  <div class="carousel-item top-carousel">
+
+                      <div class="row carousel-content">
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xl-7">
+                              <div class="content animated fadeIn" style="animation-duration:5s;">
+                                  <h1 class="text-left"><strong>Dryfruits</strong></h1>
+                                  <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                  <button class="btn btn-default btn-small">Go to Shop</button>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-xl-5 animated zoomIn" style="animation-duration:4s;">
+                              <img src="images/dry-fruits-png.png" class="img-fluid">
+                            </div>-->
+                        <!--</div>
+                    
+                  </div>
+                </div>
+               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>-->
+             <!-- </div>
+            </div>
+          </div>-->
+
+
+          <!--Carousel End Here -->
+
+          <!-- About Page Start Here -->
+          <section id="about" style="animation-duration:3s;">
+            
+            <div class="container-fluid">
+              <div class="row">
+                  <div class="col-lg-5 col-md-5">
+                    <img src="images/grapes.png" class="img-fluid d-block">
+                  </div>
+                  <div class="col-lg-7 col-md-7">
+                    <h2 class="text-left">Better way to find the organic vegetables</h2>
+                    <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <button class="btn btn-success"><a href="about.html">Know more</a></button>
+                  </div>
+
+              </div>
+            </div>
+
+          </section>
+
+          <!-- About Page end Here -->
+
+          <!-- Products page Start Here -->
+          <section id="products" style="animation-duration:4s;"> 
+                <div class="container-fluid">
+                    <h1 class="text-center">Find your favorite organic category</h1>
+                    <p class="text-center">Did you ever imagine that the freshest of fruits and vegetables, top quality pulses and food grains, dairy products and hundreds of branded items could be handpicked and delivered to your home.</p>
+                    <div class="row">
+                      <div class="col-lg-4">
+                          <div class="category-img vegetable">
+                                   <img src="images/edited/vegetable.png" class="img-fluid mx-auto d-block">
+                                   <h4 class="text-center">Vegetables</h4>
+                          </div>
+                          
+                      </div>
+
+                      <div class="col-lg-4">
+                          <div class="category-img fruits">
+                              <img src="images/edited/fruits.png" class="img-fluid mx-auto d-block">
+                              <h4 class="text-center">Fruits</h4>
+                          </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                          <div class="category-img dryfruit">
+                              <img src="images/edited/dryfruit.png" class="img-fluid mx-auto d-block">
+                              <h4 class="text-center">Dryfruits</h4>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+          </section>
+
+            <!-- Product Page End Here -->
+
+            <!-- Shop Page Start Here -->
+
+          <section id="shop" style="animation-duration:4s;">
+              <div class="container-fluid">
+                  <h1 class="text-center">Products</h1>
+                <div class="row">
+                  <ul class="nav nav-pills mx-auto" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#vegetables">Vegetables</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#fruits">Fruits</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#dryfruits">Dryfruits</a>
+                    </li>
+                  </ul>
+                 </div>
+              </div>   
+
+                <div class="tab-content">
+                    <div class="tab-pane container active" id="vegetables">
+                      <div class="row">
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 20</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/carrot.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Carrot</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 15</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/broccoli.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Broccoli</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 10</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/brinjal.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Brinjal</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 12</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/beetroot.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Beetroot</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 15</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/capcikum.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Capcikum</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 15</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/onion.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Onion</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 17</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/potato.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Potato</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 19</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/tomato.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Tomato</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <a class="btn btn-success btn-lg mx-auto" id="btn" href="vegetable.html">Show More</a>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane container fade" id="fruits">
+
+                      <div class="row">
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 19</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/banana.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Banana</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 11</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/grape.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Grapes</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 22</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/papaya.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Papaya</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 21</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/strawbery.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Strawberry</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 23</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/mango.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Mango</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 23</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/watermelon.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Watermelon</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 11</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/cherry.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Cherry</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 12</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/jackfruit.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Jackfruit</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+                          <a class="btn btn-success btn-lg mx-auto" id="btn" href="fruits.html">Show More</a>
+                      </div>
+
+                        
+                    </div>
+                    
+                    
+                    <div class="tab-pane container fade" id="dryfruits">
+
+                      <div class="row">
+                        
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 12</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/almond.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Almond</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 14</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/anise.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Anise</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 14</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/cashew.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Cashew</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 16</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/chesnut.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Chesnut</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 18</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/kismis.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Kismis</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 19</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/peanut.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Peanut</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 20</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/pista.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Pista</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                         <div class="product-box">
+                            <div class="doller">
+                                <h5 class="text-center product-price">$ 18</h5>
+                              </div>
+                            <img class="img-fluid mx-auto d-block product-img" src="images/product-images/fennel.png" style="height:250px">
+                              
+                            <h4 class="text-center product-title"><strong>Fennel</strong></h4>
+                            <button class="btn btn-success addcart d-block mx-auto">Add Cart &nbsp<i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                         </div>
+                        </div>
+                        <a class="btn btn-success btn-lg mx-auto" id="btn" href="dryfruits.html">Show More</a>
+                      </div>
+                    </div> 
+                  
+               </div>
+
+              
+          </section>
+
+          <!-- End Here -->
+
+          <!-- Farmer Page Start Here -->
+
+          <section id="farmer-info" style="animation-duration:4s;">
+              <div class="container-fluid">
+
+                  <div id="farmer-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="row">
+                    <div class="carousel-inner farmer-carousel">
+                      <div class="carousel-item active">
+                          
+                            <div class="row">
+                              <div class="col-lg-7">
+                                <h1>Summer Special vegetables<br>and fruits are here</h1>
+                                <button class="btn btn-default btn-lg">Shop now</button>
+                              </div>
+                              <div class="col-lg-5"></div>                              
+                            </div>
+                          
+                      </div>
+                      <div class="carousel-item farmer-carousel">
+                          <div class="row">
+                            <div class="col-lg-5">
+                            </div>
+                            <div class="col-lg-7">
+                              <h1>Fresh vegetables Are here</h1>
+                              <button class="btn btn-default btn-lg">Shop now</button>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="carousel-item farmer-carousel">
+                          <div class="row">
+                            <div class="col-lg-7">
+                              <h1>Fresh Fruits Are Here</h1>
+                              <button class="btn btn-default btn-lg">Shop now</button>
+                            </div>
+                            <div class="col-lg-5"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- Farmer Page End Here -->
+
+          <!-- Offer Page Start Here -->
+        <section id="offer" style="animation-duration:4s;">
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                  <div class="vegetable-offer">
+                  		<div class="text-background">
+                      		<h1 class="text-center"><b>Vegetables<br>Up to 30% offer</b></h1>
+                      	</div>
+                      <button class="btn btn-default btn-lg mx-auto d-block"><a href="vegetable.html">Shop Now</a></button>
+                  </div>
+                </div>
+  
+                <div class="col-lg-6">
+                    <div class="fruits-offer">
+                        <h1 class="text-center"><strong>Fruits<br>Up to 40% offer</strong></h1>
+                        <button class="btn btn-default mx-auto d-block"><a href="fruits.html">Shop Now</a></button>
+                    </div>
+
+                    <div class="dryfruits-offer">
+                      <h1 class="text-center"><strong>Dryfruits<br>Up to 20% offer</strong></h1>
+                      <button class="btn btn-default mx-auto d-block"><a href="dryfruits.html">Shop Now</a></button>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+          <!-- Offer Page End Here -->
+
+          <!-- Organic Page Start here -->
+
+          <section id="organic" style="animation-duration:2s;">
+              <div class="container-fluid">
+                <h1 class="text-center">Why Choose Organic Farm</h1>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 first-row">
+                      
+                      <div class="shipping">
+                        <h4>Free shipping</h4>
+                        <p>Did you ever imagine that the freshest of fruits and vegetables, top quality pulses and food grains</p>
+                      </div>
+
+                      <div class="quality">
+                        <h4>100% Quality</h4>
+                        <p>Did you ever imagine that the freshest of fruits and vegetables, top quality pulses and food grains</p>
+                      </div>
+
+                      <div class="gift-card">
+                        <h4>Gift Cards</h4>
+                        <p>Did you ever imagine that the freshest of fruits and vegetables, top quality pulses and food grains</p>
+                      </div>
+
+                      <div class="customer-care">
+                        <h4>24/7 Customer Care</h4>
+                        <p>Did you ever imagine that the freshest of fruits and vegetables, top quality pulses and food grains</p>
+                      </div>
+                    </div>
+
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-3 second-row">
+                      <div class="discount">
+                          <h4>Discounts</h4>
+                          <p>Did you ever imagine that the freshest of fruits and vegetables, top quality pulses and food grains</p>
+                      </div>
+
+                      <div class="fresh">
+                          <h4>Always Fresh</h4>
+                          <p>Did you ever imagine that the freshest of fruits and vegetables, top quality pulses and food grains</p>
+                      </div>
+
+                      <div class="customer">
+                          <h4>Customers</h4>
+                          <p>Did you ever imagine that the freshest of fruits and vegetables, top quality pulses and food grains</p>
+                      </div>
+
+                      <div class="orga">
+                          <h4>100% Organic</h4>
+                          <p>Did you ever imagine that the freshest of fruits and vegetables, top quality pulses and food grains</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+           </section>
+
+            <!-- Organic Page End here -->
+
+            <!-- Subscribe Page Start Here -->
+
+          <!--<section id="subscribe" style="animation-duration:2s;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7">
+                        <h2>Subscribe our organic store</h2>
+                    </div>
+
+                    <div class="col-lg-5 col-md-5">
+                        <form class="form-inline">
+                          <input type="text" class="form-control" name="subscribe"id="form" placeholder="Enter E-mail">
+                          <input type="submit" class="form-control" name="subscribe" id="form-btn" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+              </div>
+            </section>-->
+
+              <!-- Subscribe End Here -->
+              <div id="blogs" style="animation-duration: 3s">
+              <div class="container">
+                  <h1 class="text-center">Blogs</h1>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img src="images/vegetable-harvest.jpg" class="img-fluid">
+                    <h3 class="text-center">Diet Vegetables</h3>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <img src="images/fruits-harvest.jpg" class="img-fluid">
+                    <h3 class="text-center">Very Tasty and fresh fruits</h3>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <img src="images/dryfruit-harvest.jpg" class="img-fluid">
+                    <h3 class="text-center">Tasty and healthy dryfruits</h3>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+              <!-- Cart Start Modal Start Here -->
+
+              <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledbt="cart" aria-hidden="true">
+              	<div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+              		<div class="modal-content">
+              		 	<div class="modal-header">
+					        <h2 class="modal-title mx-auto w-100">Shopping Cart</h2>
+					        <button type="button" class="close" data-dismiss="modal" aria-control="close">
+					        	<span aria-hidden="true">&times;</span></button>
+					      </div>
+
+					      	<div class="modal-body">
+					      		<div class="container">
+
+							       <div class="row cart-row">
+                        
+							       	<!--<table class="table">
+							        	<thead>
+							             <tr>
+							               <th scope="col-3" class="text-center cart-image cart-header cart-column border">Image</th>
+							               <th scope="col-3" class="text-center cart-title cart-header cart-column border">Name</th>
+							               <th scope="col-2" class="text-center cart-price cart-header cart-column border">Price</th>
+							               <th scope="col-2" class="text-center cart-quantity cart-header cart-column border">Quantity</th>
+							               <th scope="col-2" class="text-center border">remove</th>
+							            </tr>
+							            </thead>
+
+							         </table>-->
+							                  <!--<span class="cart-image cart-header cart-column text-center col-lg-3 border">Image</span>
+							                  <span class="cart-title cart-header cart-column text-center col-lg-3 border">Title</span>
+							                  <span class="cart-price cart-header cart-column text-center col-lg-3 border">Price</span>
+							                  <span class="cart-quantity cart-header cart-column text-center col-lg-3 border">Quantity</span>
+							                </div>-->
+
+							              </div>
+							          </div>
+						    	            <div class="cart-items">
+                                  
+						        	        </div>
+						        	 </div>
+						        	   <div class="modal-footer">     
+						                <div class="cart-total">
+												<strong class="cart-total-title">Total: </strong>
+							                	<span class="cart-total-price">$0.00</span>
+												<button class="btn btn-success btn-purchase" type="button">Purchase</button>
+
+				                	</div>
+				              	</div>
+				          </div>
+				      </div>   		
+            </div>
+          		
+          	 
+
+              <!-- Cart End Here -->
+              <!-- Footer Start Here -->
+
+              <footer id="footer" style="animation-duration:2s;">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-3">
+                            <h4>About Organic</h4>
+                              <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum <p>
+                            <button class="btn btn-default btn-sm">Read more</button>
+                          </div>
+
+                          <div class="col-lg-3">
+                            <h4>Our Products</h4>
+                            <h6>Vegetables</h6>
+                            <h6>Fruits</h6>
+                            <h6>Dryfruits</h6>
+                            <h6>Others</h6>
+                          </div>
+
+                          <div class="col-lg-3">
+                            <h4>Quick link</h4>
+                            <h6>About</h6>
+                            <h6>Contact us</h6>
+                            <h6>Store Location</h6>
+                            <h6>FAQ</h6>
+                          </div>
+
+                          <div class="col-lg-3">
+                            <h4>Contact us</h4>
+                            <h6><i class="fa fa-envelope" aria-hidden="true"></i> info@organic.com</h6><br>
+                            <h6><i class="fa fa-phone" aria-hidden="true"></i> +911234567890</h6>
+                          </div>
+                      </div>
+                  
+
+                  <div class="footer-bottom">
+                    <div class="row">
+                      <div class="col-lg-7">
+                        <p>&copy 2018 organic farm</p>
+                      </div>
+                      <div class="col-lg-5">
+                        <p>Follow us &nbsp<i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp<i class="fa fa-twitter-square" aria-hidden="true"></i>&nbsp<i class="fa fa-google-plus-square" aria-hidden="true"></i>&nbsp<i class="fa fa-linkedin-square" aria-hidden="true"></i></p>
+                        
+                      
+                      </div>
+                      
+                  </div>
+                
+              </footer>
+</div>
+              <!--Footer End Here -->
+
+            
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery.js"></script>
+    <script src="popper.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="cart.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+
+            var navbar = $('.navbar');
+
+            $(window).scroll(function(){
+                if($(window).scrollTop() <= 550)
+                {
+                    navbar.removeClass('navbar-shrink');
+                    navbar.removeClass('fixed-top');
+                    
+                } 
+                else 
+                {
+                    navbar.addClass('navbar-shrink');
+                    navbar.addClass('fixed-top');
+                }
+          });
+
+
+            $(".vegetable-offer").mouseenter(function(){
+
+            	$(".vegetable-offer h1").css({"background-color": "#233800","opacity":".9","color":"white"});
+            });
+
+            $(".vegetable-offer").mouseleave(function(){
+            	$(".vegetable-offer h1").css({"background-color":"transparent","text-shadow":"none"});
+            });
+
+            $(".fruits-offer").mouseenter(function(){
+
+            	$(".fruits-offer h1").css({"background-color": "#233800","opacity":".9","color":"white"});
+            });
+
+            $(".fruits-offer").mouseleave(function(){
+            	$(".fruits-offer h1").css({"background-color":"transparent","text-shadow":"none"});
+            });
+
+            $(".dryfruits-offer").mouseenter(function(){
+
+            	$(".dryfruits-offer h1").css({"background-color": "#233800","opacity":".9","color":"white"});
+            });
+
+            $(".dryfruits-offer").mouseleave(function(){
+            	$(".dryfruits-offer h1").css({"background-color":"transparent","text-shadow":"none"});
+            });
+        
+            $('.vegetable').mouseenter(function(){
+
+                $('.vegetable img').css("filter","grayscale(0%)");
+            });
+
+            $('.vegetable').mouseleave(function(){
+                $('.vegetable img').css("filter","grayscale(80%)");
+            });
+
+            $('.fruits').mouseenter(function(){
+
+                $('.fruits img').css("filter","grayscale(0%)");
+            });
+
+            $('.fruits').mouseleave(function(){
+
+                $('.fruits img').css("filter","grayscale(80%)");
+            });
+
+            $('.dryfruit').mouseenter(function(){
+
+                $('.dryfruit img').css("filter","grayscale(0%)");
+            });
+
+            $('.dryfruit').mouseleave(function(){
+
+                $('.dryfruit img').css("filter","grayscale(80%)");
+            });
+
+
+            $(window).resize(windowsize);
+
+            function windowsize(){
+
+            var w = $(window).width();
+            var h = $(window).height()
+
+            if(w<991){
+
+              var form_control = $(".form-control");
+
+              form_control.addClass('form-control-sm');
+
+            }else{
+              form_control.addClass('form-control-lg')
+            }
+          }          
+
+      });
+
+       
+    </script>
+  </body>
+</html>

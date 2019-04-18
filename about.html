@@ -1,0 +1,666 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to organic shopping farm">
+    <meta name="keywords" content="html,organic,template,shopping">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+
+    <title>About us</title>
+  </head>
+    
+   
+   
+<body onload="timeSet()">
+    
+     <div id="loader">
+       <img src="images/edited/juzi_loading.gif">
+     </div>
+  
+        <div style="display:none;" id="body" class="animation-content">
+
+          <!-- Navbar Start Here -->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <img src="images/logo/logo.png" class="navbar-brand">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" title="Goto home" href="index.html">Home</a>
+                </li>
+                <!--<li class="nav-item">
+                  <a class="nav-link" href="about.html">About us</a>
+                </li>-->
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" title="See products price" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pricing Table
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" data-toggle="modal" data-target="#vegetable-price" href="#">Vegetables Price</a>
+                    <a class="dropdown-item" data-toggle="modal" data-target="#fruits-price" href="#">Fruits Price</a>
+                    <a class="dropdown-item" data-toggle="modal" data-target="#Dryfruits-price" href="#">Dryfruits Price</a>
+                  </div>
+
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Goto Shop
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="vegetable.html">Vegetable Shop</a>
+                    <a class="dropdown-item" href="fruits.html">Fruits Shop</a>
+                    <a class="dropdown-item" href="dryfruits.html">Dryfruits Shop</a>
+                  </div>
+                </li>
+
+                <!--<li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>-->
+                <li class="nav-item cart-icon">
+                  <a class="nav-link" href="#" data-toggle="modal" title="Cart" data-target="#cart"><i class="fa fa-shopping-bag" aria-hidden="true"><sup id="cart-count"></sup></i></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <!-- cart Start Here -->
+
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledbt="cart" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                  <h2 class="modal-title mx-auto w-100">Shopping Cart</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-control="close">
+                    <span aria-hidden="true">&times;</span></button>
+                </div>
+
+                  <div class="modal-body">
+                    <div class="container">
+
+                     <div class="row cart-row">
+                        
+                      <table class="table">
+                        <thead>
+                           <tr>
+                             <th scope="col" class="col-3 text-center cart-image cart-header cart-column border">Image</th>
+                             <th scope="col" class="col-3 text-center cart-title cart-header cart-column border">Name</th>
+                             <th scope="col" class="col-2 text-center cart-price cart-header cart-column border">Price</th>
+                             <th scope="col" class="col-2 text-center cart-quantity cart-header cart-column border">Quantity</th>
+                             <th scope="col" class="col-2 text-center border">remove</th>
+                          </tr>
+                          </thead>
+
+                       </table>
+                                <!--<span class="cart-image cart-header cart-column text-center col-lg-3 border">Image</span>
+                                <span class="cart-title cart-header cart-column text-center col-lg-3 border">Title</span>
+                                <span class="cart-price cart-header cart-column text-center col-lg-3 border">Price</span>
+                                <span class="cart-quantity cart-header cart-column text-center col-lg-3 border">Quantity</span>
+                              </div>-->
+
+
+                            </div>
+                        </div>
+                              <div class="cart-items">
+                              </div>
+                       </div>
+                         <div class="modal-footer">     
+                            <div class="cart-total">
+                        <strong class="cart-total-title">Total</strong>
+                                <span class="cart-total-price">$0</span>
+                        <button class="btn btn-success btn-purchase" type="button">Purchase</button>
+
+                          </div>
+                        </div>
+                  </div>
+              </div>      
+            </div>
+
+           <!-- cart End Here --> 
+        <!--   The Vegatable price Start Here-->
+
+<!-- The Modal -->
+<div class="modal fade" id="vegetable-price" tableindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        
+          <h4 class="modal-title">Vegetables Price</h4>
+
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" class="text-center">Vegetables Name</th>
+                <th scope="col" class="text-center">Price</th>
+                <th scope="col" class="text-center">Shop</th>
+              </tr>
+
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="text-center">Onion</td>
+                <td class="text-center">$25</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</a></button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Carrot</td>
+                <td class="text-center">$25</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</a></button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Beedroot</td>
+                <td class="text-center">$20</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</a></button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Tomato</td>
+                <td class="text-center">$21</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</a></button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Potato</td>
+                <td class="text-center">$15</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</a></button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Brinjal</td>
+                <td class="text-center">$12</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</a></button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Capcicum</td>
+                <td class="text-center">$25</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</a></button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Broccoli</td>
+                <td class="text-center">$25</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</a></button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Potato</td>
+                <td class="text-center">$25</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</a></button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Brinjal</td>
+                <td class="text-center">$25</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</a></button></td>
+              </tr>
+
+              <tr>
+                <td class="text-center">Broccoli</td>
+                <td class="text-center">$25</td>
+                <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="vegetable.html">Goto Shop</a></button></td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+        <!--vegetable price end here-->
+
+
+        <!-- Fruits Price Start Here -->
+
+
+        <div class="modal fade" id="fruits-price" tableindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                
+                  <h4 class="modal-title mx-auto d-block">Fruits Price</h4>
+
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="text-center">Fruits Name</th>
+                        <th scope="col" class="text-center">Price</th>
+                        <th scope="col" class="text-center">Shop</th>
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="text-center">Banana</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Apple</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Orange</td>
+                        <td class="text-center">$20</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Grapes</td>
+                        <td class="text-center">$21</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Strewberry</td>
+                        <td class="text-center">$15</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Cherry</td>
+                        <td class="text-center">$12</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Pappaya</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Jackfruit</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Cherry</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Pappaya</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Cherry</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="fruits.html">Goto Shop</a></button></td>
+                      </tr>
+                    </tbody>
+                </table>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Fruits Price End Here -->
+
+        <!-- DryFruits Price Start Here -->
+
+
+        <div class="modal fade" id="Dryfruits-price" tableindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                
+                  <h4 class="modal-title mx-auto d-block">Dryfruits Price</h4>
+
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="text-center">Dryfruits Name</th>
+                        <th scope="col" class="text-center">Price</th>
+                        <th scope="col" class="text-center">Shop</th>
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="text-center">Cashew</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Chesnut</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Fennel</td>
+                        <td class="text-center">$20</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Kismiss</td>
+                        <td class="text-center">$21</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Peanut</td>
+                        <td class="text-center">$15</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Pista</td>
+                        <td class="text-center">$12</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Almond</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Anise</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Kismiss</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">Pista</td>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</a></button></td>
+                      </tr>
+
+                      <tr>
+                        <a href="#"><td class="text-center">Almond</td></a>
+                        <td class="text-center">$25</td>
+                        <td><button class="btn btn-success btn-sm mx-auto d-block"><a href="dryfruits.html">Goto Shop</a></button></td>
+                      </tr>
+                    </tbody>
+                </table>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- modal end here -->
+        <!-- Banner -- Start Here -->
+
+        <div class="container-fluid img-banner">
+          <div class="row">
+                <h1 class="text-center align-middle"><strong>About us</strong></h1>
+          </div>
+        </div>
+
+        <!-- Banner End Here -->
+          
+          <div class="container about-pg">
+              <div class="row">
+                  <div class="col-lg-5 about-img">
+                    <img src="images/cartoon-farmer.png" class="img-fluid m-auto d-block">
+                  </div>
+
+                  <div class="col-lg-7 about-content">
+                      <h1>Our History</h1>
+                      <p>Farmers are often members of local, regional, or national farmers' unions or agricultural producers' organizations and can exert significant political influence. The Grange movement in the United States was effective in advancing farmers' agendas, especially against railroad and agribusiness interests early in the 20th century. The FNSEA is very politically active in France, especially pertaining to genetically modified food. Agricultural producers, both small and large, are represented globally by the International Federation of Agricultural Producers (IFAP), representing over 600 million farmers through 120 national farmers' unions in 79 countries</p>
+                  </div>     
+              </div>
+
+              <div class="row">
+                  <div class="col-lg-7 about-content">
+                      <h1>My farmers</h1>
+                      <p>Farmers are often members of local, regional, or national farmers' unions or agricultural producers' organizations and can exert significant political influence. The Grange movement in the United States was effective in advancing farmers' agendas, especially against railroad and agribusiness interests early in the 20th century. The FNSEA is very politically active in France, especially pertaining to genetically modified food. Agricultural producers, both small and large, are represented globally by the International Federation of Agricultural Producers (IFAP), representing over 600 million farmers through 120 national farmers' unions in 79 countries</p>
+                  </div>
+                  <div class="col-lg-5 about-img">
+                    <img src="images/edited/farmer.png" class="img-fluid d-block m-auto">
+                  </div>
+              </div>
+            </div>
+
+            <div class="container farmers-container">
+                <h1 class="text-center">Our Farmers</h1>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="farmer-box">
+                          <div class="img-box">
+                              <img src="images/farmer-one.png">
+                          </div>
+                              
+                              <ul class="social-icon">
+                                <li><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                              </ul>
+                              <div class="details">
+                                  <h4>Kesavan<br><span>Farmer</span></h4>
+                              </div>
+                          
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="farmer-box">
+                          <div class="img-box">
+                              <img src="images/farmer-one.png">
+                          </div>
+                              
+                              <ul class="social-icon">
+                                <li><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                              </ul>
+                              <div class="details">
+                                  <h4>Gowtham<br><span>Farmer</span></h4>
+                              </div>
+                          
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="farmer-box">
+                          <div class="img-box">
+                              <img src="images/farmer-one.png">
+                          </div>
+                              
+                              <ul class="social-icon">
+                                <li><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                              </ul>
+                              <div class="details">
+                                  <h4>Thanu<br><span>Farmer</span></h4>
+                              </div>
+                          
+                        </div>
+                    </div>
+              </div>
+            </div>
+            
+
+              <div class="container blogs">
+                  <h1 class="text-center">Blogs</h1>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img src="images/vegetable-harvest.jpg" class="img-fluid">
+                    <h3 class="text-center">Diet Vegetables</h3>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <img src="images/fruits-harvest.jpg" class="img-fluid">
+                    <h3 class="text-center">Very Tasty and fresh fruits</h3>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <img src="images/dryfruit-harvest.jpg" class="img-fluid">
+                    <h3 class="text-center">Tasty and healthy dryfruits</h3>
+                  </div>
+              </div>
+            </div>
+          
+
+
+
+
+        <footer>
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-3">
+                            <h4>About Organic</h4>
+                              <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum <p>
+                            <button class="btn btn-default btn-sm">Read more</button>
+                          </div>
+
+                          <div class="col-lg-3">
+                            <h4>Our Products</h4>
+                            <h6>Vegetables</h6>
+                            <h6>Fruits</h6>
+                            <h6>Dryfruits</h6>
+                            <h6>Others</h6>
+                          </div>
+
+                          <div class="col-lg-3">
+                            <h4>Quick link</h4>
+                            <h6>About</h6>
+                            <h6>Contact us</h6>
+                            <h6>Store Location</h6>
+                            <h6>FAQ</h6>
+                          </div>
+
+                          <div class="col-lg-3">
+                            <h4>Contact us</h4>
+                            <h6><i class="fa fa-envelope" aria-hidden="true"></i> info@organic.com</h6><br>
+                            <h6><i class="fa fa-phone" aria-hidden="true"></i> +911234567890</h6>
+                          </div>
+                      </div>
+                  
+
+                  <div class="footer-bottom">
+                    <div class="row">
+                      <div class="col-lg-7">
+                        <p>&copy 2018 organic farm</p>
+                      </div>
+                      <div class="col-lg-5">
+                        <p>Follow us &nbsp<i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp<i class="fa fa-twitter-square" aria-hidden="true"></i>&nbsp<i class="fa fa-google-plus-square" aria-hidden="true"></i>&nbsp<i class="fa fa-linkedin-square" aria-hidden="true"></i></p>
+                        
+                      
+                      </div>
+                      
+                  </div>
+                  
+
+              </footer>
+            </div>
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery.js"></script>
+    <script src="popper.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="cart.js"></script>
+    <script src="wow.min.js"></script>
+
+    <script>
+       new WOW().init();
+        /*$(document).ready(function(){
+
+            var navbar = $('.navbar');
+
+            $(window).scroll(function(){
+                if($(window).scrollTop() <= 200)
+                {
+                    navbar.removeClass('navbar-shrink');
+                    navbar.removeClass('fixed-top');
+                    
+                } 
+                else 
+                {
+                    navbar.addClass('navbar-shrink');
+                    navbar.addClass('fixed-top');
+                }
+            });*/
+
+              
+            
+            
+    </script>
+</body>
+    </html>

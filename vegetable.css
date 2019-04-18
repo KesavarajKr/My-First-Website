@@ -1,0 +1,464 @@
+body
+{
+	margin:0px;
+	padding:0px;
+}
+#body{
+	display:none;
+}
+
+.animation-content
+{
+	position:relative;
+	animation-name: animation-body;
+	animation-duration:2s;
+}
+
+@keyframes animation-body
+{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+#loader
+{
+	height:100vh;
+	width:100%;
+	position:fixed;
+	animation-name:loader-image;
+	animation-duration:4.5s;
+}
+
+@keyframes loader-image
+{
+	0%{opacity:1;}
+	100%{opacity:0;}
+
+}
+#loader img{
+	height:200px;
+	width:200px;
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:auto;
+}
+
+
+.navbar
+{
+	
+	height:75px;
+	transition-duration: .6s;
+	z-index: 999;
+	background-color: #6CA300;
+}
+.navbar-shrink
+{
+	height:60px;
+	-webkit-box-shadow: 0px 2px 20px 0px rgba(108,163,0,1);
+	-moz-box-shadow: 0px 2px 20px 0px rgba(108,163,0,1);
+	box-shadow: 0px 2px 20px 0px rgba(108,163,0,1);
+	transition-duration: .6s;
+	background-color:#6CA300;
+}
+.navbar-brand{
+	height: 80px;
+	width: 210px
+}
+
+.navbar-nav .nav-item .nav-link
+{
+	color:#ffd700;
+	font-size:18px;
+	font-family: 'Poppins', sans-serif;
+	padding:0px 25px 0px 25px;
+}
+.navbar-nav .nav-item .nav-link:hover
+{
+	color:white;	
+}
+
+#cart .modal-title{
+	width:100%;
+	text-align:center;
+}
+
+.cart-quantity-input{
+	width: 50px;
+}
+#cart-count
+{
+	padding:5px;
+}
+#cart h2,.cart-total-title{
+	color:green;
+	font-family: 'Poppins', sans-serif;
+	font-weight:bold;
+}
+#cart table thead tr{
+	color:green;
+}
+.cart-products .row
+{
+	height:100px;
+	align-items: center;
+	padding:10px;
+}
+.cart-products h5
+{
+	vertical-align: middle;
+	color:#6CA300;
+	font-family: 'Poppins', sans-serif;
+}
+.cart-products button
+{
+	font-family: 'Poppins', sans-serif;
+	border:0px;
+}
+.btn-purchase
+{
+	margin:20px;
+}
+.modal-header h4
+{
+	font-size:35px;
+	font-family: 'Poppins', sans-serif;
+	color:#6CA300;
+	font-weight:bold;
+	text-align:center;
+	width:100%;
+}
+.modal-body thead
+{
+	font-family: 'Poppins', sans-serif;
+	color:#6CA300;
+	font-size:20px;
+}
+.modal-body td
+{
+	font-size:18px;
+	font-family: 'Poppins', sans-serif;
+	color:gray;
+}
+
+.modal-body button
+{
+	background-color: #6ca300;
+	border:0;
+}
+.modal-body button:hover
+{
+	background-color:#3B540F;
+}
+#vegetable-price .modal-footer button
+{
+	background-color:#3B540F;
+	border:0;
+}
+#vegetable-price .modal-footer button:hover
+{
+	background-color: #6ca300;
+}
+#fruits-price .modal-footer button
+{
+	background-color:#3B540F;
+	border:0;
+}
+#fruits-price .modal-footer button:hover
+{
+	background-color: #6ca300;
+}
+#Dryfruits-price .modal-footer button
+{
+	background-color:#3B540F;
+	border:0;
+}
+#Dryfruits-price .modal-footer button:hover
+{
+	background-color: #6ca300;
+}
+.dropdown-item
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-item:hover{
+	background-color: green;
+	color:white;
+}
+
+.product-box
+{
+	height:420px;
+	margin-top:40px;
+	transition: .5s;
+	border-radius:7px;
+	-webkit-box-shadow: 0px 1px 10px -5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 1px 10px -5px rgba(0,0,0,0.2);
+	box-shadow: 0px 1px 10px -5px rgba(0,0,0,0.2);
+}
+
+.product-box:hover
+{
+	-webkit-box-shadow: 0px 1px 16px -5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 1px 16px -5px rgba(0,0,0,0.2);
+	box-shadow: 0px 1px 16px -5px rgba(0,0,0,0.2);
+}
+.product-box img
+{
+	margin-top:30px;
+}
+.product-box button
+{
+	border-radius:50px;
+	color:white;
+	background-color:#3B540F;
+	border:0;
+}
+.product-box button:hover
+{
+	background-color:#6CA300;
+	color:white;
+}
+.product-box h4
+{
+	padding:10px;
+	color:#3B540F;
+	font-family: 'Poppins', sans-serif;
+	font-size:18px;
+}
+
+
+
+.doller
+{
+	width:60px;
+	height:60px;
+	background-color: #6CA300;
+	border-radius:50%;
+	color:white;
+	position: absolute;
+	right: 25px;
+	margin-top:10px;
+}
+.doller h5{
+	position: absolute;
+	margin-top:16px;
+	margin-left:10px;
+}
+
+.sidenav
+{
+	margin-top:60px;
+}
+
+.sidenav-content h5
+{
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	color:#6ca300;
+	font-size: 18px;
+	padding:5px;
+	margin-left:15px;
+}
+
+.sidenav-content ul li
+{
+	list-style: none;
+}
+.sidenav-content ul li a
+{
+	text-decoration: none;
+	color:#6ca300;
+}
+
+.custom-checkbox
+{
+	margin-left:28px;
+	color:#6ca300;
+}
+
+.content
+{
+	margin-top:40px;
+}
+.img-container
+{
+	background-image: url(images/edited/back.png);
+	background-position: center;
+}
+
+.img-banner h1
+{
+	color:#fff;
+	font-weight:bold;
+	margin-top: 7%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+}
+.img-banner
+{
+	height:300px;
+	background-image:url(images/vegetables_back.jpeg);
+	background-size:cover;
+}
+
+.content h1
+{
+	color:#6ca300;
+	font-family: 'Poppins', sans-serif;
+	font-weight:bold;
+}
+
+footer
+{
+	background-color:#233800;
+	color:white;
+	margin-top:60px;
+}
+footer .col-lg-3
+{
+	margin-top:40px;
+}
+footer .col-lg-3 h4
+{
+	padding:10px;
+	font-family: 'Poppins', sans-serif; 
+	font-weight:bold;
+}
+footer .col-lg-3 p
+{
+	font-size:15px;
+	text-align:left;
+	padding-top:10px;
+	font-family: 'Poppins', sans-serif; 
+}
+footer .btn
+{
+	border:1px solid white;
+	border-radius:0px;
+	color:white;
+}
+footer .btn:hover
+{
+	background-color:green;
+	color:white;
+}
+footer h6
+{
+	margin-left:10px;
+	font-family: 'Poppins', sans-serif; 
+}
+.footer-bottom
+{
+	border-top:1px solid white;
+	margin-top:20px;
+}
+.footer-bottom .col-lg-7,.col-lg-5
+{
+	margin-top:15px;
+}
+
+@media only screen and (max-width: 600px)
+{
+	.navbar
+	{
+		height:85px;
+	}
+	.navbar-nav
+	{
+		background-color:#6CA300;
+		width:100%;
+	}
+	.navbar-nav .nav-item
+	{
+		margin:0 auto;
+		display:block;
+	}
+	.navbar-nav .nav-item .nav-link
+	{
+		padding:10px;
+		margin:0;
+	}
+	.navbar-brand
+	{
+		width:150px;
+	}
+
+	.img-banner h1
+	{
+		font-size:50px;
+		margin-top:25%;
+	}
+	footer h4,h6
+	{
+		text-align:center;
+	}
+	footer .col-lg-3 p
+	{
+		text-align:center;
+	}
+	footer .btn
+	{
+		margin:0 auto;
+		display:block;
+	}
+	.footer-bottom p
+	{
+		text-align:center;
+	}
+}
+@media only screen and (max-width: 990px){
+
+	.navbar
+	{
+		height:85px;
+	}
+	.navbar-nav
+	{
+		background-color:#6CA300;
+		width:100%;
+	}
+	.navbar-nav .nav-item
+	{
+		margin:0 auto;
+		display:block;
+	}
+	.navbar-nav .nav-item .nav-link
+	{
+		padding:10px;
+		margin:0;
+	}
+	.sidenav-content
+	{
+		width:100%;
+	}
+	.sidenav-content h5
+	{
+		text-align:center;
+	}
+	#category-list,#price-list,#discount-list
+	{
+		text-align:center;
+		padding-left:0;
+	}
+	footer h4,h6
+	{
+		text-align:center;
+	}
+	footer .col-lg-3 p
+	{
+		text-align:center;
+	}
+	footer .btn
+	{
+		margin:0 auto;
+		display:block;
+	}
+	.footer-bottom p
+	{
+		text-align:center;
+	}
+}
